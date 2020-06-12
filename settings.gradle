@@ -1,0 +1,3 @@
+include ':safeSQLite'
+include ':app'
+rootProject.name = "safedemo"
