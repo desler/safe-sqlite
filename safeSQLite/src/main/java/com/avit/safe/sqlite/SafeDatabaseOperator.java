@@ -28,7 +28,7 @@ public final class SafeDatabaseOperator<DATA> implements IDatabaseOperation<DATA
     private void waitLock(){
         synchronized (waitLock){
             try {
-                operation.wait(1);
+                waitLock.wait(1);
             } catch (InterruptedException e) {
             }
         }
