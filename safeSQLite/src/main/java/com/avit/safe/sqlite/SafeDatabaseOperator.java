@@ -55,7 +55,7 @@ public final class SafeDatabaseOperator<DATA> implements IDatabaseOperation<DATA
             } catch (SQLiteDatabaseLockedException | SQLiteTableLockedException e) {
                 Log.w(TAG, "saveOrUpdate: ", e);
                 waitLock();
-            } catch (Exception e) {
+            } catch (Throwable e) {
                 Log.e(TAG, "saveOrUpdate: ", e);
                 break;
             }
@@ -76,7 +76,7 @@ public final class SafeDatabaseOperator<DATA> implements IDatabaseOperation<DATA
             } catch (SQLiteDatabaseLockedException | SQLiteTableLockedException e) {
                 Log.w(TAG, "saveOrUpdate: ", e);
                 waitLock();
-            } catch (Exception e) {
+            } catch (Throwable e) {
                 Log.e(TAG, "saveOrUpdate: ", e);
                 break;
             }
@@ -97,7 +97,7 @@ public final class SafeDatabaseOperator<DATA> implements IDatabaseOperation<DATA
             } catch (SQLiteDatabaseLockedException | SQLiteTableLockedException e) {
                 Log.w(TAG, "read: ", e);
                 waitLock();
-            } catch (Exception e) {
+            } catch (Throwable e) {
                 Log.e(TAG, "read: ", e);
                 break;
             }
@@ -118,7 +118,7 @@ public final class SafeDatabaseOperator<DATA> implements IDatabaseOperation<DATA
             } catch (SQLiteDatabaseLockedException | SQLiteTableLockedException e) {
                 Log.w(TAG, "read: ", e);
                 waitLock();
-            } catch (Exception e) {
+            } catch (Throwable e) {
                 Log.e(TAG, "read ... : ", e);
                 break;
             }
@@ -139,7 +139,7 @@ public final class SafeDatabaseOperator<DATA> implements IDatabaseOperation<DATA
             } catch (SQLiteDatabaseLockedException | SQLiteTableLockedException e) {
                 Log.w(TAG, "read: ", e);
                 waitLock();
-            } catch (Exception e) {
+            } catch (Throwable e) {
                 Log.e(TAG, "read: ", e);
                 break;
             }
@@ -160,7 +160,7 @@ public final class SafeDatabaseOperator<DATA> implements IDatabaseOperation<DATA
             } catch (SQLiteDatabaseLockedException | SQLiteTableLockedException e) {
                 Log.w(TAG, "read: ", e);
                 waitLock();
-            } catch (Exception e) {
+            } catch (Throwable e) {
                 Log.e(TAG, "read: ", e);
                 break;
             }
@@ -181,7 +181,7 @@ public final class SafeDatabaseOperator<DATA> implements IDatabaseOperation<DATA
             } catch (SQLiteDatabaseLockedException | SQLiteTableLockedException e) {
                 Log.w(TAG, "delete: ", e);
                 waitLock();
-            } catch (Exception e) {
+            } catch (Throwable e) {
                 Log.e(TAG, "delete: ", e);
                 break;
             }
@@ -202,7 +202,7 @@ public final class SafeDatabaseOperator<DATA> implements IDatabaseOperation<DATA
             } catch (SQLiteDatabaseLockedException | SQLiteTableLockedException e) {
                 Log.d(TAG, "delete: ", e);
                 waitLock();
-            } catch (Exception e) {
+            } catch (Throwable e) {
                 Log.e(TAG, "delete ... : ", e);
                 break;
             }
@@ -223,7 +223,7 @@ public final class SafeDatabaseOperator<DATA> implements IDatabaseOperation<DATA
             } catch (SQLiteDatabaseLockedException | SQLiteTableLockedException e) {
                 Log.e(TAG, "delete: ", e);
                 waitLock();
-            } catch (Exception e) {
+            } catch (Throwable e) {
                 Log.e(TAG, "delete: ", e);
                 break;
             }
@@ -244,7 +244,7 @@ public final class SafeDatabaseOperator<DATA> implements IDatabaseOperation<DATA
             } catch (SQLiteDatabaseLockedException | SQLiteTableLockedException e) {
                 Log.e(TAG, "delete: ", e);
                 waitLock();
-            } catch (Exception e) {
+            } catch (Throwable e) {
                 Log.e(TAG, "delete: ", e);
                 break;
             }
@@ -265,7 +265,7 @@ public final class SafeDatabaseOperator<DATA> implements IDatabaseOperation<DATA
             } catch (SQLiteDatabaseLockedException | SQLiteTableLockedException e) {
                 Log.e(TAG, "count: ", e);
                 waitLock();
-            } catch (Exception e) {
+            } catch (Throwable e) {
                 Log.e(TAG, "count: ", e);
                 break;
             }
@@ -286,7 +286,7 @@ public final class SafeDatabaseOperator<DATA> implements IDatabaseOperation<DATA
             } catch (SQLiteDatabaseLockedException | SQLiteTableLockedException e) {
                 Log.e(TAG, "count: ", e);
                 waitLock();
-            } catch (Exception e) {
+            } catch (Throwable e) {
                 Log.e(TAG, "count: ", e);
                 break;
             }
@@ -307,7 +307,7 @@ public final class SafeDatabaseOperator<DATA> implements IDatabaseOperation<DATA
             } catch (SQLiteDatabaseLockedException | SQLiteTableLockedException e) {
                 Log.e(TAG, "count: ", e);
                 waitLock();
-            } catch (Exception e) {
+            } catch (Throwable e) {
                 Log.e(TAG, "count: ", e);
                 break;
             }
